@@ -3,6 +3,13 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 
 export default function Home() {
+  const images = [];
+  for(let i = 0; i<11; i++) {
+    images.push(
+        <img key={i} src={`/images/IMG_64${85+i}.png`} style={{width:'80%'}}/>
+    );
+    images.push(<hr></hr>)
+  }
   return (
     <div className="container">
       <Head>
@@ -11,10 +18,9 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <Header title="Albérlet kiadó" />
+        <p>Pénz: 150.000 havonta kápéban</p>
+        {images}
       </main>
 
       <Footer />
