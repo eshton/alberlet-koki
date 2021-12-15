@@ -34,17 +34,17 @@ export default function Home() {
       </Head>
       <main>
         <Header title="Albérlet kiadó" />
-        <h2>Paraméterek</h2>
+        <h2>Tudnivalók</h2>
         <ul>
           <li>Cím: 1108 Budapet, Gergely utca 128A</li>
-          <li>7. emelet, lift</li>
-          <li>Méret: 57 m<sup>2</sup></li>
-          <li>Bútorozott</li>
-          <li>Közös költség: 15.000,-</li>
-          <li>Ár: 150.000 / hónap</li>
+          <li>7. emelet, lift </li>
+          <li>Méret: 57 m&#178;</li>
+          <li>Bútorozott, dupla légkondi</li>
           <li>Parkoló belső zárt téren</li>
           <li>Köki metró 10 perc séta</li>
-          <li>Azonnal költözhető</li>
+          <li>Azonnal költözhető, 2 havi kaució + egy hónap előre</li>
+          <li>Közös költség: 15.000</li>
+          <li>Ár: 150.000 + rezsi / hónap</li>
           <li>Érdeklődni: +36203387096</li>
         </ul>
         <h2>Térkép</h2>
