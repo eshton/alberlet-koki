@@ -20,10 +20,9 @@ export default function Home() {
     "/images/img14.jpeg",
   ];
   const imagesElements = [];
-  let i = 0;
   images.forEach((image, index) => {
-    imagesElements.push(<img key={i++} src={image} style={{width:'80%'}}/>);
-    imagesElements.push(<hr></hr>);
+    imagesElements.push(<img key={`img-${index}`} src={image} style={{width:'80%'}} alt={`Apartment photo ${index + 1}`}/>);
+    imagesElements.push(<hr key={`hr-${index}`}/>);
   })
 
   return (
@@ -48,7 +47,7 @@ export default function Home() {
           <li>Érdeklődni: +36203387096</li>
         </ul>
         <h2>Térkép</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4060.193311660896!2d19.159166221357374!3d47.46340272267262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741c31b53ec6c8d%3A0xdb9732d37775f3d7!2sBudapest%2C%20Gergely%20u.%20128a%2C%201108!5e0!3m2!1sen!2shu!4v1639600615579!5m2!1sen!2shu" width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4060.193311660896!2d19.159166221357374!3d47.46340272267262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741c31b53ec6c8d%3A0xdb9732d37775f3d7!2sBudapest%2C%20Gergely%20u.%20128a%2C%201108!5e0!3m2!1sen!2shu!4v1639600615579!5m2!1sen!2shu" width="600" height="450" style={{border:0}} allowFullScreen loading="lazy"></iframe>
 
         <h2>Képek</h2>
         {imagesElements}
